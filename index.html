@@ -26,10 +26,11 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            font-size: 20px; /* Increased font size */
+            font-size: 1rem;
         }
         .window {
-            width: 800px;
+            width: 80%;
+            max-width: 800px;
             background-color: #FFFFFF;
             border: 2px solid #000000;
             box-shadow: 4px 4px #808080;
@@ -38,27 +39,27 @@
         .title-bar {
             background-color: #000080;
             color: #FFFFFF;
-            padding: 2px;
-            font-size: 20px;
+            padding: 0.5rem;
+            font-size: 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         .title-bar-text {
-            padding-left: 4px;
+            padding-left: 0.5rem;
         }
         .title-bar-controls {
-            padding-right: 4px;
+            padding-right: 0.5rem;
         }
         .title-bar-controls button {
             background-color: #C0C0C0;
             border: 1px solid #C0C0C0;
-            width: 16px;
-            height: 16px;
-            margin-left: 2px;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-left: 0.2rem;
             cursor: pointer;
-            font-size: 20px;
-            line-height: 12px;
+            font-size: 1rem;
+            line-height: 1.5rem;
             text-align: center;
             padding: 0;
         }
@@ -67,18 +68,18 @@
             border-color: #06f7ff;
         }
         .content {
-            padding: 20px;
+            padding: 1rem;
         }
         .footer {
             background-color: #C0C0C0;
             color: #000000;
             text-align: center;
-            padding: 5px;
+            padding: 0.5rem;
             border-top: 1px solid #000000;
         }
         .music a {
             display: block;
-            margin: 10px 0;
+            margin: 0.5rem 0;
             text-decoration: none;
             color: #6f00ff;
         }
@@ -94,29 +95,64 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 2px 5px;
+            padding: 0.5rem;
             box-shadow: 0 -2px 2px #808080;
         }
         .start-button {
             background-color: #C0C0C0;
             border: 2px solid #000000;
-            padding: 2px 10px;
-            font-size: 14px;
+            padding: 0.2rem 0.5rem;
+            font-size: 0.875rem;
             cursor: pointer;
             display: flex;
             align-items: center;
         }
         .start-button img {
-            margin-right: 5px;
-            width: 20px;
-            height: 20px;
+            margin-right: 0.5rem;
+            width: 1.25rem;
+            height: 1.25rem;
         }
         .start-button:hover {
             background-color: #808080;
         }
         .taskbar-clock {
-            font-size: 14px;
-            margin-right: 20px;
+            font-size: 0.875rem;
+            margin-right: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .window {
+                width: 95%;
+            }
+            .title-bar {
+                font-size: 0.875rem;
+            }
+            .title-bar-controls button {
+                width: 1rem;
+                height: 1rem;
+                font-size: 0.875rem;
+            }
+            .content {
+                padding: 0.5rem;
+            }
+            .footer {
+                padding: 0.2rem;
+            }
+            .taskbar {
+                padding: 0.2rem;
+            }
+            .start-button {
+                padding: 0.2rem 0.5rem;
+                font-size: 0.75rem;
+            }
+            .start-button img {
+                width: 1rem;
+                height: 1rem;
+            }
+            .taskbar-clock {
+                font-size: 0.75rem;
+                margin-right: 0.5rem;
+            }
         }
     </style>
     <script>
